@@ -1,6 +1,6 @@
 # Privacy Policy — Glacier
 
-**Last updated:** August 30, 2026
+**Last updated:** October 25, 2026
 
 This Privacy Policy explains what data **Glacier** ("the Bot") collects, how it is used, and how it is protected. It applies to the Discord server(s) that have added the Bot.
 
@@ -34,7 +34,11 @@ We do not collect Discord passwords, email addresses, payment information, or IP
 
 Glacier reads message text in real time to check it against staff-configured auto-response triggers, to detect @mentions for auto-reactions, and to detect the word "download" for an automatic info reply. This content is processed transiently and is **not stored** in our database.
 
-The one exception is a hidden **"honeypot" anti-raid channel**, not intended for use by legitimate members. If a message is posted there, its text and any attached images are automatically forwarded to a private staff moderation-log channel (within Discord) and the sender is removed from the server. This exists solely to catch raid bots, scammers, and spam accounts, and message content is never used to train machine learning or AI models.
+The one exception is a hidden **"honeypot" anti-raid channel**, not intended for use by legitimate members. If a message is posted there, its text and any attached images are automatically forwarded to a private staff moderation-log channel (within Discord) and the sender is removed from the server. This exists solely to catch raid bots, scammers, and spam accounts.
+
+When a **support ticket is closed**, Glacier generates a text transcript of that ticket channel (author, timestamp, message text, embed text and attachment links) and posts it as a file into the server's private staff ticket-log channel (within Discord). Transcripts are not stored in our own database.
+
+Message content is never used to train machine learning or AI models. Glacier does **not** access presence/online-status or activity data.
 
 ---
 
@@ -51,7 +55,7 @@ All persistent data (XP/levels, birthdays, blacklist entries, auto-response/auto
 - Data is **not** deleted on a fixed 30-day schedule — leveling, birthday, and configuration data is kept for as long as the Bot remains in your server.
 - When a member leaves a server, their leveling and auto-reaction data tied to that server is automatically deleted.
 - Blacklist entries and moderation records may be retained longer for security and abuse-prevention purposes, even after a member leaves.
-- Honeypot logs are kept in that server's own private moderation-log channel, subject to Discord's own message retention and that server's staff practices.
+- Honeypot logs and ticket transcripts are kept in that server's own private moderation-log channel, subject to Discord's own message retention and that server's staff practices.
 - The storage disk/volume used to host this data is encrypted at rest.
 
 ---
@@ -62,7 +66,7 @@ Depending on your location, you may have rights to access, correct, or request d
 
 To request deletion of your data, contact us on Discord (**@papiertanne210**) or open a ticket in our server at **discord.gg/glacier-client-glacier-productions-938248183878930514**. Upon a verified request, we will delete your stored guild ID, user ID, XP/level, birthday, and any blacklist or auto-response records within **7 days**.
 
-The auto-response, auto-reaction, and "download" keyword features are configured by server staff for the whole server and process message text only transiently — there is no separate per-user opt-out, but staff can disable these features server-wide. The honeypot channel is not meant for normal use, so no opt-out applies there.
+The auto-response, auto-reaction, and "download" keyword features are configured by server staff for the whole server and process message text only transiently — there is no separate per-user opt-out, but staff can disable these features server-wide. The honeypot channel is not meant for normal use, so no opt-out applies there. Ticket transcripts only include messages that you send inside a ticket you or staff opened; if you do not want a transcript of a message, do not post it in a ticket.
 
 ---
 
